@@ -29,6 +29,7 @@ DEFAULT_GUILD_CONFIG = {
     "giveaway_channel": None,
     "giveaway_role": DEFAULT_ROLES["giveaway_role"],
     "autoban_channel": None,
+    "autoban_count": 0,
     "automod_log_channel": None,
     "badwords": [],
     "ad_whitelist": [
