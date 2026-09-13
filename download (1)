@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+data/config.json
+data/giveaways.json
+data/automod_violations.json
