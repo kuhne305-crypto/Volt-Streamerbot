@@ -98,7 +98,7 @@ class TwitchAnnounce(commands.Cog):
         for guild in self.bot.guilds:
             guild_config = config.get_guild_config(guild.id)
             channel_id = guild_config.get("twitch_channel")
-            username = guild_config.get("twitch_username", "tytan_hd")
+            username = guild_config.get("twitch_username", "atlaxx_tv")
             if not channel_id:
                 continue
 
