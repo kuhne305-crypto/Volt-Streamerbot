@@ -119,7 +119,7 @@ class Verify(commands.Cog):
         )
         embed.add_field(
             name="👥 Freunde einladen",
-            value="Lade deine Freunde mit diesem Link ein:\nhttps://discord.gg/7tQh9DGN96",
+            value="Lade deine Freunde mit diesem Link ein:\nhttps://discord.gg/MSHKmh9TKt",
             inline=False
         )
         embed.set_footer(text="Klicke unten auf ✅ Verifizieren, um Zugriff auf den Server zu erhalten.")
