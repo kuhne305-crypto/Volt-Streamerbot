@@ -23,7 +23,7 @@ DEFAULT_GUILD_CONFIG = {
     "reaction_role_channel": None,
     "reaction_role_message": None,
     "twitch_channel": None,
-    "twitch_username": "tytan_hd",
+    "twitch_username": "atlaxx_tv",
     "twitch_role": DEFAULT_ROLES["stream_role"],
     "twitch_last_stream_id": None,
     "giveaway_channel": None,
