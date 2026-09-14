@@ -5,10 +5,10 @@ import config
 
 # Emoji -> Config-Key (Rollen-ID wird aus der Guild-Config gelesen)
 EMOJI_ROLE_MAP = {
-    "🔴": ("stream_role", "Stream-Ping", "Wenn TYTAN_HD live geht"),
+    "🔴": ("stream_role", "Stream-Ping", "Wenn ATLAXX live geht"),
     "🎁": ("giveaway_role", "Giveaway-Ping", "Bei Gewinnspielen"),
     "📊": ("umfrage_role", "Umfrage-Ping", "Bei Abstimmungen"),
-    "📱": ("social_role", "Tiktok-Ping", "Bei neuen Tiktok-Videos"),
+    "📱": ("social_role", "Social-Ping", "Bei neuen Social-Media-Posts"),
 }
 
 
