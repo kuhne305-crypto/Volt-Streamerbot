@@ -21,7 +21,7 @@ class AdminConfig(commands.Cog):
             role = ctx.guild.get_role(rid) if rid else None
             return role.mention if role else "❌ nicht gesetzt"
 
-        embed = discord.Embed(title="⚙️ TYTAN Bot – Konfiguration", color=discord.Color.from_str("#5865F2"))
+        embed = discord.Embed(title="⚙️ ATLAXX Bot – Konfiguration", color=discord.Color.from_str("#5865F2"))
         embed.add_field(name="Verify-Channel", value=ch(gc.get("verify_channel")), inline=True)
         embed.add_field(name="Verify-Rolle", value=rl(gc.get("verify_role")), inline=True)
         embed.add_field(name="\u200b", value="\u200b", inline=True)
@@ -85,7 +85,10 @@ class AdminConfig(commands.Cog):
         )
         embed.add_field(
             name="🚫 Autoban-Channel",
-            value="`!setautobanchannel #channel`",
+            value=(
+                "`!setautobanchannel #channel` – legt den Fallen-Channel fest\n"
+                "`!setupautoban [#channel]` – postet die Warn-Nachricht mit Statistik"
+            ),
             inline=False
         )
         embed.add_field(
