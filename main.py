@@ -1,10 +1,18 @@
 import os
+import sys
 import asyncio
 import logging
 
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
+
+# Stellt sicher, dass der Ordner dieser Datei (und damit "cogs/") immer im
+# Python-Suchpfad ist, unabhängig davon, aus welchem Arbeitsverzeichnis der
+# Bot gestartet wird (relevant z.B. bei manchen Railway/Docker-Setups).
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
 
 load_dotenv()
 
@@ -38,7 +46,7 @@ async def on_ready():
     log.info(f"Eingeloggt als {bot.user} (ID: {bot.user.id})")
     log.info(f"Aktiv auf {len(bot.guilds)} Server(n)")
     await bot.change_presence(activity=discord.Streaming(
-        name="tytan_hd", url="https://www.twitch.tv/tytan_hd"
+        name="atlaxx_tv", url="https://www.twitch.tv/atlaxx_tv"
     ))
 
 
