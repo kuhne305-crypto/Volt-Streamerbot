@@ -30,6 +30,9 @@ intents.reactions = True
 
 bot = commands.Bot(command_prefix=PREFIX, intents=intents, help_command=commands.DefaultHelpCommand())
 
+from volt_credit import volt_start  # Status an VoltStudio.work
+volt_start(bot)
+
 INITIAL_COGS = [
     "cogs.admin_config",
     "cogs.verify",
